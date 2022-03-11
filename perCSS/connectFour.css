@@ -1,0 +1,161 @@
+body{
+	background: url("Images/background.jpg");
+}
+#darkLayout{
+	background: rgba(0,0,0,.5);
+}
+h1{
+	margin-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: -5px;
+}
+#scoreBoard{
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	margin-top: 2%;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+#scoreBoard>h2{
+	margin-top: 10px;
+	font-family: arial narrow;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#scoreBoard>button{
+	margin-top: 30px;
+	border-radius: 30px;
+	width: 50%;
+}
+.playerRepresentation{
+	height: 60px;
+	width: 60px;
+	margin-top: 10px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.shortInfo{
+	border: 2px solid grey;
+	border-radius: 20px;
+	margin-top:20%;
+	padding: 20px;
+}
+.shortInfo>p{
+	font-family: arial narrow;
+}
+#gridContainer{
+	display: grid;
+	grid-template: 1fr 6fr/1fr;
+	height: 530px;
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.chipHolder{
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	width: 100%;
+	justify-content: center;
+}
+.chipHolder>div{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: 1px solid black;
+	margin: 14px;
+	cursor: pointer;
+	transition: 1s ease-in-out;
+	position: relative;
+
+}
+.gameBoard{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+.gameBoard>div{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	margin: 14px;
+	margin-top: 20px !important;
+	transition: 1s ease-in-out;
+	padding: 0px;
+	background: white;
+}
+.chip,.selected{
+	height: 40px;
+	width: 40px;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: absolute !important;
+	top: 0px;
+}
+.red{
+	background: #D93D3D;
+}
+.blue{
+	background: #3553ED
+}
+.unclickable{
+	pointer-events: none;
+}
+.invisible{
+	display: none;
+}
+.taken{
+	background: black !important;
+}
+.settings{
+	text-align: center;
+	margin-top: 10%;
+	padding-top: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	color: white;
+}
+.settings form{
+	margin-top: 20px;
+}
+label{
+	font-family: arial narrow;
+	font-weight: bold;
+}
+.settings h3{
+	font-weight: bold;
+}
+.offButton{
+	margin-bottom: 40px;
+}
+.settingHolder{
+	padding-right: 0 !important;
+}
+
+/* Small menu */
+.smlMenu{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+.smlMenu>div{
+	text-align: center;
+}
+.smlMenu>*{
+	color: white;
+}
+.smlMenu button{
+	width: 70%;
+	margin-top: 20px;
+	border-radius: 40px;
+}

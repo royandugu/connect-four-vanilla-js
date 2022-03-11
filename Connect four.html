@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Connect-4 Beta: Drop Down Chip  </title>
+	<link rel="stylesheet" type="text/css" href="perCSS/connectFour.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="menu">
+	</div>
+	<div id="darkLayout">
+		<h1 class="text-light"> Connect  <span class="text-danger"> Fo</span><span class="text-primary">ur</span> </h1>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-12">
+				<div id="scoreBoard" class="d-none d-lg-block">
+					<h2> Current player : </h2>
+					<div class="playerRepresentation"></div>
+					<button class="btn btn-outline-light" onclick="restart()"> Restart </button>
+					<div class="shortInfo">
+					<p> Connect four is a game of two players, where each one has to drop a chip from the 	top of the game board. The winner will be 	determined by the first player to be able 	to arrange the chips in an order. The 		order may be horizontal, vertical or even 	diagnol.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-12">
+	<div id="gridContainer">
+		<div class="chipHolder bg-dark">
+			<div class="space">
+				<div class="chip"></div>
+			</div>
+			<div class="space">
+				
+				<div class="chip"></div>
+			</div>
+			<div class="space">
+				<div class="chip"></div>
+			</div>
+			<div class="space">
+				
+				<div class="chip"></div>
+			</div>
+			<div class="space">
+				
+				<div class="chip"></div>
+			</div>
+			<div class="space">
+				
+				<div class="chip"></div>
+			</div>
+			<div class="space">
+				
+				<div class="chip"></div>
+			</div>
+		</div>
+		<div class="gameBoard bg-dark">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="taken invisible"></div>
+			<div class="taken invisible"></div>
+			<div class="taken invisible"></div>
+			<div class="taken invisible"></div>
+			<div class="taken invisible"></div>
+			<div class="taken invisible"></div>
+			<div class="taken invisible"></div>
+		</div>
+	</div>
+</div>
+<div class="col-lg-2 col-12">
+</div>
+<div class="col-lg-1 col-12 settingHolder">
+	<div class="settings bg-dark d-none d-lg-block">
+		<h3> SFX : </h3>
+		<form>
+			<input type="radio" id="radioButton" name="sfx" checked="checked"/> <label>On</label><br> <input type="radio" name="sfx" class="offButton"/> <label> Off</label>
+		</form>
+	</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row smlMenu bg-dark">
+		<div class="col-6 sfxSettings">
+			<h3> SFX : </h3>
+		<form>
+			<input type="radio" id="radioButtonSML" name="sfxSml" checked="checked"/> <label>On</label><br> <input type="radio" name="sfxSml" class="offButtonSML"/> <label> Off</label>
+		</form>
+		</div>
+		<div class= " col-6 restartButtonContainer">
+		<button class="btn btn-light" onclick="restart()"> Restart </button>
+		</div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="JS/connectFour.js"></script>
+<script src="https://kit.fontawesome.com/e33d5b9810.js" crossorigin="anonymous"></script>
+</html>
