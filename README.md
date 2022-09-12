@@ -15,3 +15,8 @@ Whenever the chips are slotted down a recursive function is called to check if t
 ### Changes to be made 
 1. The win screen is just an alert message
 2. For now it's only avaliable as a 2 player game. AI hasn't been added yet. 
+
+### View
+<br>
+
+<img src="ForReadMe/1.JPG">
